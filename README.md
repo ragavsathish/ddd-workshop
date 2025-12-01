@@ -42,6 +42,7 @@ This section of the workshop will focus on 5 elements:
 
 - [eventstorming.com](https://www.eventstorming.com/resources/)
 - [Event Storming Journal](https://www.eventstormingjournal.com/)
+- [OpenCode Framework](/.opencode) - Automated EventStorming with AI agents
 
 ## The Practical Bit
 
@@ -163,6 +164,64 @@ There are many ways to model the same problem space but some are better than oth
 
 THe chances are you've managed to create a useful model of the problem space which will work for now, but it might start to crumble down the line as business requirements change or you realise you've missed an important concept. Embracing that models will likely need to adapt over time as you discover more about the domain will set you up for success much more than striving to find the "perfect" model ever will.
 
+## Running EventStorming with OpenCode
+
+This repository includes the OpenCode framework for automated EventStorming sessions. You can run collaborative EventStorming workshops using specialized AI agents.
+
+### Quick Start
+
+```bash
+# For the social media platform example in this README
+/opencode eventstorming-session use @README.md as an example and include all subagent as participant
+
+# For your own domain
+/opencode eventstorming-session for [your domain description] and include all subagent as participant
+```
+
+### Example Usage
+
+```bash
+# E-commerce domain
+/opencode eventstorming-session for an e-commerce platform with product catalog, shopping cart, checkout process, and order management and include all subagent as participant
+
+# Healthcare domain  
+/opencode eventstorming-session for a healthcare appointment scheduling system with patient registration, appointment booking, doctor availability, and billing and include all subagent as participant
+```
+
+### What Happens
+
+The OpenCode framework will:
+
+1. **Coordinate 5 Specialized Agents** in parallel:
+   - **Product Owner** - Business requirements and domain events
+   - **Service Designer** - User journeys and experience design
+   - **Developer** - Technical architecture and DDD patterns
+   - **Risk Analyst** - Security, compliance, and failure scenarios
+   - **Test Engineer** - Testing strategies and acceptance criteria
+
+2. **Follow EventStorming Methodology**:
+   - Part 1: Domain Events (past tense)
+   - Part 2: Commands (intent to change system)
+   - Part 3: Actors (who issues commands)
+   - Part 4: Entities (domain concepts with IDs)
+   - Part 5: Fail Events (Business Rules)
+   - Part 6: Bounded Contexts
+
+3. **Generate Comprehensive Outputs**:
+   - Complete domain model with events, commands, entities
+   - Bounded contexts with clear boundaries
+   - Risk assessment and mitigation strategies
+   - Testing strategies with acceptance criteria
+   - Implementation roadmap
+
+### OpenCode Framework Features
+
+- **Multi-Agent Collaboration**: Real-time coordination between specialized agents
+- **Domain-Driven Design**: Follows Alberto Brandolini's EventStorming methodology
+- **Risk Assessment**: Built-in security, compliance, and failure analysis
+- **Testing Strategy**: Comprehensive test scenarios and acceptance criteria
+- **Implementation Ready**: Outputs suitable for development teams
+
 ## Example Solutions
 
-Example solutions, which we'll use for the coming sections of the workshop, can be found in **SOLUTIONS.md** on this branch.
+Example solutions from traditional EventStorming sessions can be found in the workshop materials. The OpenCode framework generates comprehensive, actionable outputs that combine the best practices from multiple specialized perspectives.
