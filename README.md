@@ -42,7 +42,6 @@ This section of the workshop will focus on 5 elements:
 
 - [eventstorming.com](https://www.eventstorming.com/resources/)
 - [Event Storming Journal](https://www.eventstormingjournal.com/)
-- [OpenCode Framework](/.opencode) - Automated EventStorming with AI agents
 
 ## The Practical Bit
 
@@ -224,4 +223,8 @@ The OpenCode framework will:
 
 ## Example Solutions
 
-Example solutions from traditional EventStorming sessions can be found in the workshop materials. The OpenCode framework generates comprehensive, actionable outputs that combine the best practices from multiple specialized perspectives.
+Example solutions from traditional EventStorming sessions can be found in workshop materials. The OpenCode framework generates comprehensive, actionable outputs that combine best practices from multiple specialized perspectives.
+
+## Next Up
+
+That's us finished with the EventStorming section. Next up, [Entities](https://github.com/PensionBee/ddd-workshop/tree/03-entities)
