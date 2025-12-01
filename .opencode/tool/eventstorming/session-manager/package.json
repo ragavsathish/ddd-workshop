@@ -1,0 +1,48 @@
+{
+  "name": "@ddd-workshop/eventstorming-session-manager",
+  "version": "1.0.0",
+  "description": "EventStorming session management tool",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "eventstorming-session-manager": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "bun build ./index.ts --outdir ./dist --target node",
+    "start": "bun run index.ts",
+    "dev": "bun --watch index.ts",
+    "test": "bun test",
+    "lint": "eslint . --ext .ts"
+  },
+  "dependencies": {
+    "@types/uuid": "^10.0.0",
+    "chalk": "^4.1.2",
+    "commander": "^11.0.0",
+    "fs-extra": "^11.1.1",
+    "inquirer": "^8.2.6",
+    "moment": "^2.29.4",
+    "uuid": "^13.0.0",
+    "yaml": "^2.3.4"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.3",
+    "@types/inquirer": "^9.0.6",
+    "@types/jest": "^29.5.6",
+    "@types/node": "^20.8.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.5",
+    "@typescript-eslint/parser": "^6.7.5",
+    "eslint": "^8.51.0",
+    "jest": "^29.7.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "keywords": [
+    "ddd",
+    "eventstorming",
+    "domain-driven-design",
+    "workshop",
+    "session-management"
+  ],
+  "author": "DDD Workshop",
+  "license": "MIT"
+}

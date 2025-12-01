@@ -1,0 +1,3 @@
+[submodule "OpenAgents"]
+	path = OpenAgents
+	url = https://github.com/darrenhinde/OpenAgents.git

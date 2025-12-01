@@ -1,0 +1,26 @@
+{
+  "name": "@ddd-workshop/eventstorming-tool",
+  "version": "1.0.0",
+  "description": "EventStorming tool for OpenCode",
+  "type": "module",
+  "main": "eventstorming/index.js",
+  "scripts": {
+    "build": "bun build ./eventstorming/index.ts --outdir ./dist --target node",
+    "dev": "bun --watch eventstorming/index.ts"
+  },
+  "dependencies": {
+    "@opencode-ai/plugin": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.0",
+    "typescript": "^5.2.2"
+  },
+  "keywords": [
+    "ddd",
+    "eventstorming",
+    "opencode",
+    "tool"
+  ],
+  "author": "DDD Workshop",
+  "license": "MIT"
+}
